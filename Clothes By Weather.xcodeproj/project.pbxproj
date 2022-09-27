@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C79E133728DDE3AF0010C4BA /* Clothes_By_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E133628DDE3AF0010C4BA /* Clothes_By_WeatherApp.swift */; };
+		C79E133928DDE3AF0010C4BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E133828DDE3AF0010C4BA /* ContentView.swift */; };
+		C79E133B28DDE3B00010C4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79E133A28DDE3B00010C4BA /* Assets.xcassets */; };
+		C79E133E28DDE3B00010C4BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79E133D28DDE3B00010C4BA /* Preview Assets.xcassets */; };
+		C79E134C28DED9230010C4BA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E134B28DED9230010C4BA /* WidgetKit.framework */; };
+		C79E134E28DED9230010C4BA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E134D28DED9230010C4BA /* SwiftUI.framework */; };
+		C79E135128DED9230010C4BA /* ClothesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E135028DED9230010C4BA /* ClothesWidget.swift */; };
+		C79E135328DED9250010C4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79E135228DED9250010C4BA /* Assets.xcassets */; };
+		C79E135728DED9250010C4BA /* ClothesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C79E134928DED9230010C4BA /* ClothesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C79E135F28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E135E28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf */; };
+		C79E136228DF7BF40010C4BA /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E136128DF7BF40010C4BA /* Pretendard-Bold.ttf */; };
+		C79E136628DF7D0F0010C4BA /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136528DF7D0F0010C4BA /* FontManager.swift */; };
+		C79E136728DF7D0F0010C4BA /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136528DF7D0F0010C4BA /* FontManager.swift */; };
+		C79E136928DF855D0010C4BA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136828DF855D0010C4BA /* LocationManager.swift */; };
+		C79E136C28DF8E900010C4BA /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136B28DF8E900010C4BA /* Temperature.swift */; };
+		C79E136D28DF8E900010C4BA /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136B28DF8E900010C4BA /* Temperature.swift */; };
+		C79E137028E073ED0010C4BA /* ActiveTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136F28E073ED0010C4BA /* ActiveTimePicker.swift */; };
+		C79E137128E073ED0010C4BA /* ActiveTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E136F28E073ED0010C4BA /* ActiveTimePicker.swift */; };
+		C79E137328E0742A0010C4BA /* ClothesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E137228E0742A0010C4BA /* ClothesView.swift */; };
+		C79E137428E0742A0010C4BA /* ClothesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E137228E0742A0010C4BA /* ClothesView.swift */; };
+		C79E137628E074700010C4BA /* HourlyWeatherScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E137528E074700010C4BA /* HourlyWeatherScrollView.swift */; };
+		C79E137728E074700010C4BA /* HourlyWeatherScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E137528E074700010C4BA /* HourlyWeatherScrollView.swift */; };
+		C79E137828E083C20010C4BA /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E135E28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf */; };
+		C79E137928E083C50010C4BA /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E136128DF7BF40010C4BA /* Pretendard-Bold.ttf */; };
+		C79E137B28E0C9C00010C4BA /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E137A28E0C9C00010C4BA /* Pretendard-Regular.ttf */; };
+		C79E137C28E0C9C00010C4BA /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E137A28E0C9C00010C4BA /* Pretendard-Regular.ttf */; };
+		C79E137E28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E137D28E0D1710010C4BA /* Pretendard-Medium.ttf */; };
+		C79E137F28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E137D28E0D1710010C4BA /* Pretendard-Medium.ttf */; };
+		C79E138128E216510010C4BA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138028E216510010C4BA /* OnboardingView.swift */; };
+		C79E138228E216510010C4BA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138028E216510010C4BA /* OnboardingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C79E135528DED9250010C4BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C79E132B28DDE3AF0010C4BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C79E134828DED9230010C4BA;
+			remoteInfo = ClothesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C79E135B28DED9250010C4BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C79E135728DED9250010C4BA /* ClothesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C79E133328DDE3AF0010C4BA /* Clothes By Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clothes By Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79E133628DDE3AF0010C4BA /* Clothes_By_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes_By_WeatherApp.swift; sourceTree = "<group>"; };
+		C79E133828DDE3AF0010C4BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C79E133A28DDE3B00010C4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C79E133D28DDE3B00010C4BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C79E134428DDE3D30010C4BA /* Clothes By Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Clothes By Weather.entitlements"; sourceTree = "<group>"; };
+		C79E134928DED9230010C4BA /* ClothesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClothesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79E134B28DED9230010C4BA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C79E134D28DED9230010C4BA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C79E135028DED9230010C4BA /* ClothesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesWidget.swift; sourceTree = "<group>"; };
+		C79E135228DED9250010C4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C79E135428DED9250010C4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79E135C28DF22820010C4BA /* ClothesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClothesWidgetExtension.entitlements; sourceTree = "<group>"; };
+		C79E135E28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		C79E136128DF7BF40010C4BA /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		C79E136428DF7CB80010C4BA /* Clothes-By-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Clothes-By-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C79E136528DF7D0F0010C4BA /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		C79E136828DF855D0010C4BA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C79E136B28DF8E900010C4BA /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		C79E136F28E073ED0010C4BA /* ActiveTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTimePicker.swift; sourceTree = "<group>"; };
+		C79E137228E0742A0010C4BA /* ClothesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesView.swift; sourceTree = "<group>"; };
+		C79E137528E074700010C4BA /* HourlyWeatherScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherScrollView.swift; sourceTree = "<group>"; };
+		C79E137A28E0C9C00010C4BA /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		C79E137D28E0D1710010C4BA /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		C79E138028E216510010C4BA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C79E133028DDE3AF0010C4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79E134628DED9230010C4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E134E28DED9230010C4BA /* SwiftUI.framework in Frameworks */,
+				C79E134C28DED9230010C4BA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C79E132A28DDE3AF0010C4BA = {
+			isa = PBXGroup;
+			children = (
+				C79E135C28DF22820010C4BA /* ClothesWidgetExtension.entitlements */,
+				C79E133528DDE3AF0010C4BA /* Clothes By Weather */,
+				C79E134F28DED9230010C4BA /* ClothesWidget */,
+				C79E134A28DED9230010C4BA /* Frameworks */,
+				C79E133428DDE3AF0010C4BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C79E133428DDE3AF0010C4BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C79E133328DDE3AF0010C4BA /* Clothes By Weather.app */,
+				C79E134928DED9230010C4BA /* ClothesWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C79E133528DDE3AF0010C4BA /* Clothes By Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C79E136428DF7CB80010C4BA /* Clothes-By-Weather-Info.plist */,
+				C79E135D28DF7B970010C4BA /* Font */,
+				C79E134428DDE3D30010C4BA /* Clothes By Weather.entitlements */,
+				C79E136828DF855D0010C4BA /* LocationManager.swift */,
+				C79E133628DDE3AF0010C4BA /* Clothes_By_WeatherApp.swift */,
+				C79E136E28E073D60010C4BA /* View */,
+				C79E136B28DF8E900010C4BA /* Temperature.swift */,
+				C79E133A28DDE3B00010C4BA /* Assets.xcassets */,
+				C79E133C28DDE3B00010C4BA /* Preview Content */,
+			);
+			path = "Clothes By Weather";
+			sourceTree = "<group>";
+		};
+		C79E133C28DDE3B00010C4BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C79E133D28DDE3B00010C4BA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C79E134A28DED9230010C4BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C79E134B28DED9230010C4BA /* WidgetKit.framework */,
+				C79E134D28DED9230010C4BA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C79E134F28DED9230010C4BA /* ClothesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C79E135028DED9230010C4BA /* ClothesWidget.swift */,
+				C79E135228DED9250010C4BA /* Assets.xcassets */,
+				C79E135428DED9250010C4BA /* Info.plist */,
+			);
+			path = ClothesWidget;
+			sourceTree = "<group>";
+		};
+		C79E135D28DF7B970010C4BA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C79E137A28E0C9C00010C4BA /* Pretendard-Regular.ttf */,
+				C79E137D28E0D1710010C4BA /* Pretendard-Medium.ttf */,
+				C79E135E28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf */,
+				C79E136128DF7BF40010C4BA /* Pretendard-Bold.ttf */,
+				C79E136528DF7D0F0010C4BA /* FontManager.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C79E136E28E073D60010C4BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C79E136F28E073ED0010C4BA /* ActiveTimePicker.swift */,
+				C79E133828DDE3AF0010C4BA /* ContentView.swift */,
+				C79E137228E0742A0010C4BA /* ClothesView.swift */,
+				C79E137528E074700010C4BA /* HourlyWeatherScrollView.swift */,
+				C79E138028E216510010C4BA /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C79E133228DDE3AF0010C4BA /* Clothes By Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79E134128DDE3B00010C4BA /* Build configuration list for PBXNativeTarget "Clothes By Weather" */;
+			buildPhases = (
+				C79E132F28DDE3AF0010C4BA /* Sources */,
+				C79E133028DDE3AF0010C4BA /* Frameworks */,
+				C79E133128DDE3AF0010C4BA /* Resources */,
+				C79E135B28DED9250010C4BA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C79E135628DED9250010C4BA /* PBXTargetDependency */,
+			);
+			name = "Clothes By Weather";
+			productName = "Clothes By Weather";
+			productReference = C79E133328DDE3AF0010C4BA /* Clothes By Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C79E134828DED9230010C4BA /* ClothesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79E135828DED9250010C4BA /* Build configuration list for PBXNativeTarget "ClothesWidgetExtension" */;
+			buildPhases = (
+				C79E134528DED9230010C4BA /* Sources */,
+				C79E134628DED9230010C4BA /* Frameworks */,
+				C79E134728DED9230010C4BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClothesWidgetExtension;
+			productName = ClothesWidgetExtension;
+			productReference = C79E134928DED9230010C4BA /* ClothesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C79E132B28DDE3AF0010C4BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C79E133228DDE3AF0010C4BA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C79E134828DED9230010C4BA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = C79E132E28DDE3AF0010C4BA /* Build configuration list for PBXProject "Clothes By Weather" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C79E132A28DDE3AF0010C4BA;
+			productRefGroup = C79E133428DDE3AF0010C4BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C79E133228DDE3AF0010C4BA /* Clothes By Weather */,
+				C79E134828DED9230010C4BA /* ClothesWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C79E133128DDE3AF0010C4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E135F28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf in Resources */,
+				C79E133E28DDE3B00010C4BA /* Preview Assets.xcassets in Resources */,
+				C79E137E28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */,
+				C79E137B28E0C9C00010C4BA /* Pretendard-Regular.ttf in Resources */,
+				C79E136228DF7BF40010C4BA /* Pretendard-Bold.ttf in Resources */,
+				C79E133B28DDE3B00010C4BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79E134728DED9230010C4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E137828E083C20010C4BA /* Pretendard-SemiBold.ttf in Resources */,
+				C79E137F28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */,
+				C79E137928E083C50010C4BA /* Pretendard-Bold.ttf in Resources */,
+				C79E137C28E0C9C00010C4BA /* Pretendard-Regular.ttf in Resources */,
+				C79E135328DED9250010C4BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C79E132F28DDE3AF0010C4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E136928DF855D0010C4BA /* LocationManager.swift in Sources */,
+				C79E133928DDE3AF0010C4BA /* ContentView.swift in Sources */,
+				C79E136628DF7D0F0010C4BA /* FontManager.swift in Sources */,
+				C79E138128E216510010C4BA /* OnboardingView.swift in Sources */,
+				C79E136C28DF8E900010C4BA /* Temperature.swift in Sources */,
+				C79E137328E0742A0010C4BA /* ClothesView.swift in Sources */,
+				C79E137628E074700010C4BA /* HourlyWeatherScrollView.swift in Sources */,
+				C79E137028E073ED0010C4BA /* ActiveTimePicker.swift in Sources */,
+				C79E133728DDE3AF0010C4BA /* Clothes_By_WeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79E134528DED9230010C4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79E137428E0742A0010C4BA /* ClothesView.swift in Sources */,
+				C79E136728DF7D0F0010C4BA /* FontManager.swift in Sources */,
+				C79E135128DED9230010C4BA /* ClothesWidget.swift in Sources */,
+				C79E137728E074700010C4BA /* HourlyWeatherScrollView.swift in Sources */,
+				C79E137128E073ED0010C4BA /* ActiveTimePicker.swift in Sources */,
+				C79E136D28DF8E900010C4BA /* Temperature.swift in Sources */,
+				C79E138228E216510010C4BA /* OnboardingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C79E135628DED9250010C4BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C79E134828DED9230010C4BA /* ClothesWidgetExtension */;
+			targetProxy = C79E135528DED9250010C4BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C79E133F28DDE3B00010C4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C79E134028DDE3B00010C4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C79E134228DDE3B00010C4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Clothes By Weather/Clothes By Weather.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Clothes By Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clothes-By-Weather-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kirim;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위젯을 사용하기 위해 위치 항상 허용이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에 대한 날씨 정보를 확인할 수 있습니다.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C79E134328DDE3B00010C4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Clothes By Weather/Clothes By Weather.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Clothes By Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clothes-By-Weather-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kirim;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위젯을 사용하기 위해 위치 항상 허용이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에 대한 날씨 정보를 확인할 수 있습니다.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C79E135928DED9250010C4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ClothesWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClothesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClothesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위젯을 사용하기 위해 위치 항상 허용이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에 대한 날씨 정보를 확인할 수 있습니다.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather.ClothesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C79E135A28DED9250010C4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ClothesWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClothesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClothesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위젯을 사용하기 위해 위치 항상 허용이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에 대한 날씨 정보를 확인할 수 있습니다.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather.ClothesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C79E132E28DDE3AF0010C4BA /* Build configuration list for PBXProject "Clothes By Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79E133F28DDE3B00010C4BA /* Debug */,
+				C79E134028DDE3B00010C4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79E134128DDE3B00010C4BA /* Build configuration list for PBXNativeTarget "Clothes By Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79E134228DDE3B00010C4BA /* Debug */,
+				C79E134328DDE3B00010C4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79E135828DED9250010C4BA /* Build configuration list for PBXNativeTarget "ClothesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79E135928DED9250010C4BA /* Debug */,
+				C79E135A28DED9250010C4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C79E132B28DDE3AF0010C4BA /* Project object */;
+}
