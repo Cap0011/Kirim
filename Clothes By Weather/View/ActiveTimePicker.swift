@@ -20,7 +20,7 @@ struct ActiveTimePicker: View {
         NavigationView {
             GeometryReader { geometry in
                 VStack {
-                    Text("나의 외출 시간대")
+                    Text("goingOut")
                     HStack(spacing: 0) {
                         Picker(selection: $selectedStartHour, label: Text("")) {
                             ForEach(0 ..< selectedEndHour, id: \.self) { hour in
@@ -54,7 +54,7 @@ struct ActiveTimePicker: View {
                         Button {
                             isShowingPickerView.toggle()
                         } label: {
-                            Text("취소")
+                            Text("cancel")
                                 .font(.custom(FontManager.Pretendard.semiBold, size: 16))
                                 .foregroundColor(Color("Main"))
                         }
@@ -71,7 +71,7 @@ struct ActiveTimePicker: View {
                                 print("Failed")
                             }
                         } label: {
-                            Text("완료")
+                            Text("done")
                                 .font(.custom(FontManager.Pretendard.bold, size: 16))
                                 .foregroundColor(Color("Main"))
                         }

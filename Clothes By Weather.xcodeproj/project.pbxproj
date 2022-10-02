@@ -37,6 +37,13 @@
 		C79E137F28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79E137D28E0D1710010C4BA /* Pretendard-Medium.ttf */; };
 		C79E138128E216510010C4BA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138028E216510010C4BA /* OnboardingView.swift */; };
 		C79E138228E216510010C4BA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138028E216510010C4BA /* OnboardingView.swift */; };
+		C79E138428E48DA80010C4BA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138328E48DA80010C4BA /* InfoView.swift */; };
+		C79E138628E70F720010C4BA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138528E70F720010C4BA /* SettingView.swift */; };
+		C79E138828E710DC0010C4BA /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E138728E710DC0010C4BA /* LanguageView.swift */; };
+		C79E138C28E73AD00010C4BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79E138F28E73AD00010C4BA /* Localizable.strings */; };
+		C79E138D28E73AD00010C4BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79E138F28E73AD00010C4BA /* Localizable.strings */; };
+		C79E139728E8AFBD0010C4BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79E139A28E8AFBD0010C4BA /* InfoPlist.strings */; };
+		C79E139828E8AFBD0010C4BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79E139A28E8AFBD0010C4BA /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +96,13 @@
 		C79E137A28E0C9C00010C4BA /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
 		C79E137D28E0D1710010C4BA /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
 		C79E138028E216510010C4BA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C79E138328E48DA80010C4BA /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		C79E138528E70F720010C4BA /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C79E138728E710DC0010C4BA /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		C79E138E28E73AD00010C4BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C79E139028E73AEA0010C4BA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C79E139928E8AFBD0010C4BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C79E139B28E8AFC00010C4BA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,8 @@
 		C79E132A28DDE3AF0010C4BA = {
 			isa = PBXGroup;
 			children = (
+				C79E139A28E8AFBD0010C4BA /* InfoPlist.strings */,
+				C79E138F28E73AD00010C4BA /* Localizable.strings */,
 				C79E135C28DF22820010C4BA /* ClothesWidgetExtension.entitlements */,
 				C79E133528DDE3AF0010C4BA /* Clothes By Weather */,
 				C79E134F28DED9230010C4BA /* ClothesWidget */,
@@ -194,6 +210,9 @@
 				C79E137228E0742A0010C4BA /* ClothesView.swift */,
 				C79E137528E074700010C4BA /* HourlyWeatherScrollView.swift */,
 				C79E138028E216510010C4BA /* OnboardingView.swift */,
+				C79E138328E48DA80010C4BA /* InfoView.swift */,
+				C79E138528E70F720010C4BA /* SettingView.swift */,
+				C79E138728E710DC0010C4BA /* LanguageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +281,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = C79E132A28DDE3AF0010C4BA;
 			productRefGroup = C79E133428DDE3AF0010C4BA /* Products */;
@@ -280,8 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79E135F28DF7BDA0010C4BA /* Pretendard-SemiBold.ttf in Resources */,
+				C79E139728E8AFBD0010C4BA /* InfoPlist.strings in Resources */,
 				C79E133E28DDE3B00010C4BA /* Preview Assets.xcassets in Resources */,
 				C79E137E28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */,
+				C79E138C28E73AD00010C4BA /* Localizable.strings in Resources */,
 				C79E137B28E0C9C00010C4BA /* Pretendard-Regular.ttf in Resources */,
 				C79E136228DF7BF40010C4BA /* Pretendard-Bold.ttf in Resources */,
 				C79E133B28DDE3B00010C4BA /* Assets.xcassets in Resources */,
@@ -293,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79E137828E083C20010C4BA /* Pretendard-SemiBold.ttf in Resources */,
+				C79E139828E8AFBD0010C4BA /* InfoPlist.strings in Resources */,
+				C79E138D28E73AD00010C4BA /* Localizable.strings in Resources */,
 				C79E137F28E0D1710010C4BA /* Pretendard-Medium.ttf in Resources */,
 				C79E137928E083C50010C4BA /* Pretendard-Bold.ttf in Resources */,
 				C79E137C28E0C9C00010C4BA /* Pretendard-Regular.ttf in Resources */,
@@ -311,11 +335,14 @@
 				C79E133928DDE3AF0010C4BA /* ContentView.swift in Sources */,
 				C79E136628DF7D0F0010C4BA /* FontManager.swift in Sources */,
 				C79E138128E216510010C4BA /* OnboardingView.swift in Sources */,
+				C79E138828E710DC0010C4BA /* LanguageView.swift in Sources */,
 				C79E136C28DF8E900010C4BA /* Temperature.swift in Sources */,
 				C79E137328E0742A0010C4BA /* ClothesView.swift in Sources */,
 				C79E137628E074700010C4BA /* HourlyWeatherScrollView.swift in Sources */,
 				C79E137028E073ED0010C4BA /* ActiveTimePicker.swift in Sources */,
+				C79E138428E48DA80010C4BA /* InfoView.swift in Sources */,
 				C79E133728DDE3AF0010C4BA /* Clothes_By_WeatherApp.swift in Sources */,
+				C79E138628E70F720010C4BA /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +370,33 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		C79E138F28E73AD00010C4BA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79E138E28E73AD00010C4BA /* en */,
+				C79E139028E73AEA0010C4BA /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C79E139A28E8AFBD0010C4BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79E139928E8AFBD0010C4BA /* en */,
+				C79E139B28E8AFC00010C4BA /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		C79E133F28DDE3B00010C4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -408,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -466,7 +516,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Clothes By Weather/Clothes By Weather.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Clothes By Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = HY8Y957QK3;
 				ENABLE_PREVIEWS = YES;
@@ -484,7 +534,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -504,7 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Clothes By Weather/Clothes By Weather.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Clothes By Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = HY8Y957QK3;
 				ENABLE_PREVIEWS = YES;
@@ -522,7 +572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -541,7 +591,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = ClothesWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = HY8Y957QK3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClothesWidget/Info.plist;
@@ -554,7 +604,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather.ClothesWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -571,7 +621,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = ClothesWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = HY8Y957QK3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClothesWidget/Info.plist;
@@ -584,7 +634,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jio.Clothes-By-Weather.ClothesWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

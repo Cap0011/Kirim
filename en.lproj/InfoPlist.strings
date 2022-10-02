@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Clothes By Weather
+
+  Created by Jiyoung Park on 2022/10/02.
+  
+*/
+
+"NSLocationAlwaysAndWhenInUseUsageDescription" = " Always allow location access is required to use widgets.";
+"NSLocationWhenInUseUsageDescription" = "Your location is used to show local weather.";

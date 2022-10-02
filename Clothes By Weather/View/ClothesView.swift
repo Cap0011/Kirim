@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ClothesView: View {
-    let temperature: Double
+    @Binding var temperature: Double
     
     @State var currentPage: Int
     
-    @State var todayIndex = 0
+    @State var todayIndex: Int
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -22,55 +22,56 @@ struct ClothesView: View {
                         Text("Today")
                             .foregroundColor(Color("Point"))
                     }
-                    Text(Temperature.allCases[currentPage].rawValue)
+                    Text(Temperature.getStringFor(string: Temperature.allCases[currentPage]))
                         .foregroundColor(Color("Serve1"))
                 }
                 .font(.custom(FontManager.Pretendard.bold, size: 17))
+                .offset(y: 1)
                 
                 Text(properClothes(for: Temperature.allCases[currentPage]))
                     .foregroundColor(currentPage == todayIndex ? Color("Main") : Color("Serve1"))
-                    .font(.custom(FontManager.Pretendard.semiBold, size: 16))
-                    .padding(.top, -4)
+                    .font(.custom(FontManager.Pretendard.semiBold, size: 15))
+                    .padding(.top, -5)
                 
                 Image(imageName(for: Temperature.allCases[currentPage]))
                     .resizable()
                     .scaledToFit()
                     .padding(.horizontal, 20)
                     .offset(x: -10)
-                    .opacity(currentPage == todayIndex ? 1.0 : 0.55)
+                    .opacity(currentPage == todayIndex ? 1.0 : 0.4)
             }
             .padding(.top, 20)
             .padding(.leading, 20)
             
             VStack {
                 Image(systemName: "chevron.up")
-                    .opacity(currentPage != 7 ? 1.0 : 0.3)
+                    .padding(3)
+                    .opacity(currentPage != 7 ? 0.6 : 0.0)
                     .onTapGesture {
                         // Higher
-//                        withAnimation {
-                            currentPage += 1
-//                        }
+                        currentPage += 1
                     }
                     .disabled(currentPage != 7 ? false : true)
+                    .contentShape(Rectangle())
                 Spacer()
                 Image(systemName: "chevron.down")
-                    .opacity(currentPage != 0 ? 1.0 : 0.3)
+                    .padding(3)
+                    .opacity(currentPage != 0 ? 0.6 : 0.0)
                     .onTapGesture {
                         // Lower
-//                        withAnimation {
-                            currentPage -= 1
-//                        }
+                        currentPage -= 1
                     }
                     .disabled(currentPage != 0 ? false : true)
+                    .contentShape(Rectangle())
             }
-            .padding(16)
-            .font(.custom(FontManager.Pretendard.regular, size: 20))
+            .padding(13)
+            .font(.custom(FontManager.Pretendard.regular, size: 17))
             .foregroundColor(Color("Serve2"))
         }
         .background(RoundedRectangle(cornerRadius: 19).foregroundColor(Color("Box")))
-        .onAppear {
-            currentPage = temperatureIndex(for: Int(temperature))
-            todayIndex = currentPage
+        .onChange(of: temperature) { temperature in
+            todayIndex = temperatureIndex(for: Int(temperature))
+            currentPage = todayIndex
         }
         .gesture(
             DragGesture()

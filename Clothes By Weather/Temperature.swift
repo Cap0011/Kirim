@@ -9,14 +9,22 @@ import Foundation
 import WeatherKit
 
 enum Temperature: String, CaseIterable {
-    case first = "4°C 이하"
-    case second = "5 - 8°C"
-    case third = "9 - 11°C"
-    case fourth = "12 - 16°C"
-    case fifth = "17 - 19°C"
-    case sixth = "20 - 22°C"
-    case seventh = "23 - 27°C"
-    case eighth = "28°C 이상"
+    case first = "first"
+    case second = "second"
+    case third = "third"
+    case fourth = "fourth"
+    case fifth = "fifth"
+    case sixth = "sixth"
+    case seventh = "seventh"
+    case eighth = "eighth"
+    
+    func localizedString() -> String {
+        return NSLocalizedString(self.rawValue, comment: "")
+    }
+    
+    static func getStringFor(string: Temperature) -> String {
+        return string.localizedString()
+    }
 }
 
 func temperatureIndex(for temperature: Int) -> Int {
@@ -48,14 +56,14 @@ func imageName(for temperature: Temperature) -> String {
 
 func properClothes(for temperature: Temperature) -> String {
     switch temperature {
-    case .first: return "패딩, 두꺼운코트, 목도리, 기모"
-    case .second: return "코트, 가죽자켓, 히트텍, 니트, 레깅스"
-    case .third: return "트렌치 코트, 야상, 자켓, 니트, 청바지, 스타킹"
-    case .fourth: return "가디건, 자켓, 야상, 스타킹, 청바지, 면바지"
-    case .fifth: return "맨투맨, 후드티, 얇은니트, 가디건, 청바지"
-    case .sixth: return "긴팔, 셔츠, 얇은 가디건, 면바지, 청바지"
-    case .seventh: return "반팔, 얇은 셔츠, 반바지, 면바지"
-    case .eighth: return "민소매, 반팔, 반바지, 원피스"
+    case .first: return NSLocalizedString("firstClothes", comment: "")
+    case .second: return NSLocalizedString("secondClothes", comment: "")
+    case .third: return NSLocalizedString("thirdClothes", comment: "")
+    case .fourth: return NSLocalizedString("fourthClothes", comment: "")
+    case .fifth: return NSLocalizedString("fifthClothes", comment: "")
+    case .sixth: return NSLocalizedString("sixthClothes", comment: "")
+    case .seventh: return NSLocalizedString("seventhClothes", comment: "")
+    case .eighth: return NSLocalizedString("eighthClothes", comment: "")
     }
 }
 
@@ -65,8 +73,9 @@ func middleValue(weather: Weather, startHour: Int, endHour: Int) -> Double {
     for hourlyWeather in todayWeathers {
         tempArr.append(hourlyWeather.temperature.value)
     }
-    tempArr.sort()
-    return tempArr.count % 2 == 0 ? (tempArr[tempArr.count / 2] + tempArr[tempArr.count / 2 - 1]) / 2 : tempArr[tempArr.count / 2]
+    let sumArray = tempArr.reduce(0, +)
+    return sumArray / Double(tempArr.count)
+    // return tempArr.count % 2 == 0 ? (tempArr[tempArr.count / 2] + tempArr[tempArr.count / 2 - 1]) / 2 : tempArr[tempArr.count / 2]
 }
 
 

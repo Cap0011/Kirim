@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  Clothes By Weather
+
+  Created by Jiyoung Park on 2022/09/30.
+  
+*/
+
+"currentLocation" = "Current Location";
+"average" = "Average temperature\nwhen you're out";
+"highest" = "H";
+"lowest" = "L";
+"goingOut" = "The time you usually go out";
+"cancel" = "Cancel";
+"done" = "Done";
+"setting" = "Setting";
+"language" = "Language";
+"firstClothes" = "Puffer jacket,  winter coat,  scarf,  fleece lined";
+"secondClothes" = "Coat,  leather jacket,  HEATTECH,  sweater,  leggings";
+"thirdClothes" = "Heavy zip up hoodie,  field jacket,  sweater,  jeans,  stockings";
+"fourthClothes" = "Cardigan,  field jacket,  stockings,  jeans,  cotton trousers";
+"fifthClothes" = "Sweatshirt,  hoddie,  thin sweater,  cardigan,  jeans";
+"sixthClothes" = "Long sleeve,  shirt,  thin cardigan,  cotton trousers,  jeans";
+"seventhClothes" = "Short sleeve,  thin shirt,  shorts,  cotton trousers";
+"eighthClothes" = "Sleeveless,  short sleeve,  shorts,  dress";
+"first" = "Lower than 4°C";
+"second" = "5 - 8°C";
+"third" = "9 - 11°C";
+"fourth" = "12 - 16°C";
+"fifth" = "17 - 19°C";
+"sixth" = "20 - 22°C";
+"seventh" = "23 - 27°C";
+"eighth" = "Higher than 28°C";
+"permissionRequired" = "Please set 'Setting > Kirim > Location > Always' to use the widget!";
+"widgetName" = "Clothes for weather today";
+"widgetDescription" = "Check what to wear for today's weather and get quick access to Kirim app";
+"exampleDescription" = "Mostly Clear";
+"start" = "Get started";

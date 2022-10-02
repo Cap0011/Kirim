@@ -41,7 +41,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        print("Called")
         WidgetCenter.shared.reloadTimelines(ofKind: "ClothesWidget")
     }
     

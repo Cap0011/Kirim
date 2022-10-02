@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  Clothes By Weather
+
+  Created by Jiyoung Park on 2022/09/30.
+  
+*/
+
+"currentLocation" = "현재 위치";
+"average" = "외출 시 평균 기온";
+"highest" = "최고";
+"lowest" = "최저";
+"goingOut" = "나의 외출 시간대";
+"cancel" = "취소";
+"done" = "완료";
+"setting" = "설정";
+"language" = "언어";
+"firstClothes" = "패딩,  두꺼운코트,  목도리,  기모";
+"secondClothes" = "코트,  가죽자켓,  히트텍,  니트,  레깅스";
+"thirdClothes" = "두꺼운 후드집업,  야상,  자켓,  니트,  청바지,  스타킹";
+"fourthClothes" = "가디건,  자켓,  야상,  스타킹,  청바지,  면바지";
+"fifthClothes" = "맨투맨,  후드티,  얇은니트,  가디건,  청바지";
+"sixthClothes" = "긴팔,  셔츠,  얇은 가디건,  면바지,  청바지";
+"seventhClothes" = "반팔,  얇은 셔츠,  반바지,  면바지";
+"eighthClothes" = "민소매,  반팔,  반바지,  원피스";
+"first" = "4°C 이하";
+"second" = "5 - 8°C";
+"third" = "9 - 11°C";
+"fourth" = "12 - 16°C";
+"fifth" = "17 - 19°C";
+"sixth" = "20 - 22°C";
+"seventh" = "23 - 27°C";
+"eighth" = "28°C 이상";
+"permissionRequired" = "위젯 사용을 위해 '설정 > Kirim > 위치 > 항상'을 선택해주세요!";
+"widgetName" = "기온별 옷차림";
+"widgetDescription" = "날씨와 기온에 맞는 옷차림을 확인하고, Kirim 앱으로 빠르게 접근합니다.";
+"exampleDescription" = "대체로 청명함";
+"start" = "시작하기";

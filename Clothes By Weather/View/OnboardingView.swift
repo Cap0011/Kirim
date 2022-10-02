@@ -9,10 +9,11 @@ import SwiftUI
 
 struct OnboardingView: View {
     @Binding var shouldShowOnboarding: Bool
+    @State var imageName = ""
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image("onboarding")
+            Image(imageName)
                 .resizable()
                 .ignoresSafeArea()
             
@@ -21,7 +22,7 @@ struct OnboardingView: View {
                     .frame(width: 146, height: 44)
                     .foregroundColor(Color("Button"))
                 
-                Text("시작하기")
+                Text("start")
                     .font(.custom(FontManager.Pretendard.bold, size: 17))
                     .foregroundColor(.white)
             }
@@ -32,6 +33,14 @@ struct OnboardingView: View {
         }
         .ignoresSafeArea()
         .statusBar(hidden: true)
+        .onAppear {
+            let language = Locale.current.language.languageCode?.identifier
+            if language == "ko" {
+                imageName = "onboarding-ko"
+            } else {
+                imageName = "onboarding-en"
+            }
+        }
     }
 }
 

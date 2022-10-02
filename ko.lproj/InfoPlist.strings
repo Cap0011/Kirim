@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Clothes By Weather
+
+  Created by Jiyoung Park on 2022/10/02.
+  
+*/
+
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "위젯을 사용하기 위해 위치 항상 허용이 필요합니다.";
+"NSLocationWhenInUseUsageDescription" = "현재 위치에 대한 날씨 정보를 확인할 수 있습니다.";
